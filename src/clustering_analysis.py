@@ -85,6 +85,9 @@ plt.title('Dendrograma del clustering jerárquico')
 plt.xlabel('Índice del punto')
 plt.ylabel('Distancia')
 plt.axhline(y=Z[-4, 2], color='r', linestyle='--')  # Línea para 4 clusters
+plt.savefig(BASE_DIR / "images" / "dendograma.png",
+            dpi=300,
+            bbox_inches='tight')
 plt.show()
 
 
@@ -180,6 +183,9 @@ plt.xlabel('Número de clusters')
 plt.ylabel('Coeficiente de silueta')
 plt.title('Coeficiente de silueta vs. Número de clusters')
 plt.grid()
+plt.savefig(BASE_DIR / "images" / "silueta_vs_k.png",
+            dpi=300,
+            bbox_inches='tight')
 plt.show()
 
 
@@ -213,6 +219,9 @@ plt.xlabel('Número de clusters (k)')
 plt.ylabel('Índice de Calinski–Harabasz')
 plt.title('Calinski–Harabasz vs. Número de clusters')
 plt.grid(True)
+plt.savefig(BASE_DIR / "images" / "ch_vs_k.png",
+            dpi=300,
+            bbox_inches='tight')
 plt.show()
 
 # Agregar la columna de clusters al DataFrame original

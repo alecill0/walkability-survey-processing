@@ -113,6 +113,9 @@ Hierarchical clustering was implemented using:
 - average linkage
 - Chebyshev distance metric
 
+
+
+
 ## Project Structure
 
 ```text
@@ -136,6 +139,27 @@ Performs:
 - cluster validation
 - result exportation
 
+### `walkability_index.py`
+
+This script derives cluster-specific walkability index functions based on previously computed clustering results.
+
+It performs the following steps:
+
+- Loads cluster-level aggregated preference data (mean values per variable)
+- Normalizes variables within each cluster to obtain relative weights
+- Differentiates between benefit-type and cost-type variables
+- Applies inversion to cost variables using (1 - x) transformation
+
+Constructs a linear composite index for each cluster:
+
+CI_k(x) = Σ_j w_{k,j} * f_j(x)
+
+Outputs symbolic expressions representing cluster-specific walkability utility functions
+
+The resulting expressions describe distinct pedestrian perception profiles
+and can be interpreted as cluster-specific utility functions for urban
+walkability evaluation.
+
 ## Outputs
 
 The project generates:
@@ -143,6 +167,7 @@ The project generates:
 - clustered datasets
 - validation metrics
 - clustering visualizations
+
 
 
 ## Example clustering visualization
