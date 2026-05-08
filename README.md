@@ -46,8 +46,44 @@ The final configuration (30% selection / 70% ranking)
 was chosen based on the overall clustering performance
 across these metrics.
 
+## Walkability Variables
 
-## Workflow
+| Variable | Description |
+|---|---|
+| swd | Sidewalk delimitation |
+| ws | Sidewalk width |
+| pedFlow | Pedestrian flow |
+| pvQ | Pavement quality |
+| pedInfr | Pedestrian infrastructure |
+| Obstr | Sidewalk obstacles |
+| Pres_pol_c | Presence of security elements (police, cameras) |
+| Crime | Crime perception |
+| Crashes | Traffic accidents |
+| Lighting | Street lighting |
+| Cs | Vehicle speed |
+| ptStops | Public transport stops |
+| Tcontrl | Traffic control |
+| trFlow | Vehicular flow |
+| crTime | Crossing time |
+| trDens | Commercial land-use density |
+| insDens | Institutional/administrative land-use density |
+| ResDens | Residential land-use density |
+| Aesthetics | Building aesthetics |
+| Trees | Presence of trees |
+| Block | Block length |
+| noise | Noise level |
+| StagH2o | Stagnant water |
+| Slope | Street slope |
+| AirPol | Air pollution |
+| Cleanless | Street cleanliness |
+| mpgaDens | Green/Parks/recreational areas density |
+
+These variables represent perceived walkability-related factors evaluated by pedestrians through survey-based preference selection and ranking processes.
+
+Participants prioritized variables according to perceived importance, allowing the construction of weighted preference profiles later used in clustering analysis.
+
+
+## Project Workflow
 
 1. Raw survey preprocessing
 2. Preference score normalization
