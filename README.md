@@ -89,3 +89,18 @@ The project generates:
 - clustered datasets
 - validation metrics
 - clustering visualizations
+
+
+## Example clustering visualization
+
+The following figures were generated using a reduced sample dataset
+included for demonstration and reproducibility purposes.
+
+These visualizations illustrate the dimensionality reduction and
+hierarchical clustering workflow used in the research pipeline.
+
+### UMAP projection
+![UMAP](images/umap_projection.png)
+
+### Hierarchical clustering
+![Clusters](images/hierarchical_clusters.png)

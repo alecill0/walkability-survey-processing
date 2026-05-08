@@ -66,13 +66,6 @@ from scipy.stats import spearmanr
 coef, _ = spearmanr(distancias_orig.flatten(), distancias_reducidas.flatten())
 print(f"Coeficiente de correlación de Spearman entre distancias originales y proyectadas: {coef:.4f}")
 
-plt.figure(figsize=(8, 6))
-plt.scatter(data_np[:, 0], data_np[:, 1], c='blue', s=10)
-plt.title('Proyección de datos usando UMAP')
-plt.xlabel('Componente 1')
-plt.ylabel('Componente 2')
-plt.grid(True)
-plt.show()
 
 # Clustering jerárquico
 from sklearn.metrics import silhouette_score
@@ -135,16 +128,15 @@ plt.title('Clustering jerárquico con 4 clusters')
 plt.xlabel('Componente 1')
 plt.ylabel('Componente 2')
 plt.grid(True)
+plt.savefig(BASE_DIR / "images" / "umap_projection.png",
+            dpi=300,
+            bbox_inches='tight')
 plt.show()
 
 
 
 
 # Seleccionamos 4 clusters
-#epsilon = 1e-7# Ajustar este valor según lo que observes en el dendrograma
-#umbral_4 = Z[-4, 2] - epsilon
-#clusters = fcluster(Z, t=umbral_4, criterion='distance')
-
 
 k = 4
 # Aplicar fcluster
