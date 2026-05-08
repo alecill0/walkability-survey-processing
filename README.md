@@ -188,8 +188,8 @@ environmental and infrastructure variables
 
 Cluster-based walkability maps
 
-legend walkability index:
-![legend](images/legend_walkability_scale.png)
+### legend walkability index:
+<img src="images/legend_walkability_scale.png" width="250"/>
 
 ### Cluster 1
 ![Cluster1](images/cluster_1_walkability_map.png)
