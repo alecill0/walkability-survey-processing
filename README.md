@@ -46,6 +46,21 @@ The final configuration (30% selection / 70% ranking)
 was chosen based on the overall clustering performance
 across these metrics.
 
+
+## Workflow
+
+1. Raw survey preprocessing
+2. Preference score normalization
+3. Weighted variable generation
+4. Standardization of features
+5. UMAP dimensionality reduction
+6. Hierarchical clustering
+7. Cluster validation using:
+   - Silhouette Score
+   - Calinski-Harabasz Index
+   - Davies-Bouldin Index
+8. Export of clustered datasets
+
 ## Clustering Workflow
 
 The clustering pipeline includes:
