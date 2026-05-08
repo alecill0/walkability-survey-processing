@@ -61,6 +61,9 @@ across these metrics.
    - Davies-Bouldin Index
 8. Export of clustered datasets
 
+![Workflow](images/workflow.png)
+
+
 ## Clustering Workflow
 
 The clustering pipeline includes:
@@ -118,4 +121,7 @@ hierarchical clustering workflow used in the research pipeline.
 ![UMAP](images/umap_projection.png)
 
 ### Hierarchical clustering
-![Clusters](images/hierarchical_clusters.png)
+![Clusters](images/dendograma.png)
+
+### Clustering validation
+![Silueta](images/silueta_vs_k.png)
