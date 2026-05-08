@@ -168,7 +168,40 @@ The project generates:
 - validation metrics
 - clustering visualizations
 
+## Spatial Walkability Mapping (Gran Concepción)
 
+The cluster-specific walkability index functions were applied spatially
+to selected urban sectors of Gran Concepción.
+
+Each street segment was evaluated by computing a numeric walkability score
+based on the corresponding cluster-specific utility function.
+
+This process transforms the CIₖ(x) functions into a spatial evaluation model,
+allowing the representation of how different pedestrian profiles perceive
+the same urban environment.
+
+The resulting maps illustrate spatial variations in walkability according to:
+
+pedestrian preference clusters
+physical street conditions
+environmental and infrastructure variables
+
+Cluster-based walkability maps
+
+legend walkability index:
+![legend](images/legend_walkability_scale.png)
+
+### Cluster 1
+![Cluster1](images/cluster_1_walkability_map.png)
+
+### Cluster 2
+![Cluster2](images/cluster_2_walkability_map.png)
+
+### Cluster 3
+![Cluster3](images/cluster_3_walkability_map.png)
+
+### Cluster 4
+![Cluster4](images/cluster_4_walkability_map.png)
 
 ## Example clustering visualization
 
